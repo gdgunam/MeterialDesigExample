@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/tools"
+    android:id="@+id/more"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    app:rv_color="@color/disable"
+    ripple:rv_centered="true">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="4dp"
+        card_view:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewFood"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ima" />
+
+            <TextView
+                android:id="@+id/textViewIitleFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/imageViewFood"
+                android:layout_toRightOf="@+id/imageViewFood"
+                android:singleLine="true"
+                android:text="Arroz a la tumbada"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDescritionFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageViewFood"
+                android:layout_below="@+id/textViewIitleFood"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toEndOf="@+id/imageViewFood"
+                android:layout_toRightOf="@+id/imageViewFood"
+                android:maxLines="6"
+                android:text="Uno de los mas importantes de Veracruz y el mas emblemático de Alvarado, es una mezcla de arroz, condimentos, cebolla, mariscos (camarón, pulpo y jaiba entera) que lleva su nombre porque se “tumba” del fuego y se sirve rápidamente para evitar que se seque, es un platillo delicioso que de seguro todos hemos probado en alguna ocasión, no por nada es muy famoso, ha sabido ganarse su lugar entre los mas ricos del estado."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_secondary" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</com.andexert.library.RippleView>
+
+
